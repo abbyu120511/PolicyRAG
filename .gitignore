@@ -1,0 +1,34 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets and machine-specific state
+.env
+.env.*
+!.env.example
+.qwen_ip_cache
+.DS_Store
+
+# Private source documents. Keep real insurance documents on this machine only.
+private_docs/*
+!private_docs/.gitkeep
+
+# Local artifacts generated from private documents (OCR output, vector stores, etc.)
+storage/*
+!storage/.gitkeep
+
+# Legacy local document and vector-store locations used by the early exercises
+pdf/
+ragapp/docs/
+ragapp/chroma_db/
+
+# Local resume-generation artifacts; not part of the PolicyRAG repository
+output/
+tmp/
